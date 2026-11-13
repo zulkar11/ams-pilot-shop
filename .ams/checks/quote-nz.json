@@ -1,0 +1,1 @@
+{"version": 1, "description": "A quote for a country without its own rate answers instead of raising KeyError", "request": {"method": "GET", "path": "/quote?country=NZ&weight_kg=2"}, "expect": {"status": 200, "body_contains": ["16.5"], "body_not_contains": ["KeyError"]}}
