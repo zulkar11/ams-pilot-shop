@@ -20,7 +20,7 @@ INTERNATIONAL = 15.00
 
 
 def base_rate(country: str) -> float:
-    return RATES[country]
+    return RATES.get(country, INTERNATIONAL)
 
 
 def quote(order: dict) -> float:
